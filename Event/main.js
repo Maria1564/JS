@@ -63,10 +63,67 @@ let inp = document.querySelector(".input");
 
 
 //Задание7
-sqr.addEventListener("mouseover", ()=>{
-    sqr.style.backgroundColor = "green";
-});
+// sqr.addEventListener("mouseover", ()=>{
+//     sqr.style.backgroundColor = "green";
+// });
 
-sqr.addEventListener("mouseout", ()=>{
-    sqr.style.backgroundColor = "";  
+// sqr.addEventListener("mouseout", ()=>{
+//     sqr.style.backgroundColor = "";  
+// })
+
+
+//Задание8
+// let main_block = document.querySelector(".main");
+// let  buttons = document.querySelectorAll(".btn");
+
+
+// let AllBtnRed = ()=>{
+//     for (i = 0; i < buttons.length; i++){
+//         if(!(getComputedStyle(buttons[i]).backgroundColor == "rgb(165, 42, 42)")){
+//             buttons[i].style.backgroundColor = null;
+//         }
+//     }
+// }
+
+// main_block.addEventListener("click", (event)=>{
+//     let select_button = event.target;
+//     AllBtnRed();
+//     select_button.style.backgroundColor = "green";
+//     if(select_button== main_block){
+//         main_block.style.backgroundColor = null;
+//     }
+// })
+
+
+
+//Задание9
+let main_block = document.querySelector(".main");
+let result = document.querySelector(".result");
+let backspace = document.querySelectorAll(".backspace");
+
+let func_even = function(event){
+    if(event.target.closest(".btn_mark")){ 
+        let select_button = event.target;
+        let button_value = select_button.textContent;
+        inp.value += button_value;
+    }
+}
+
+main_block.addEventListener("click", func_even);
+
+//кнока равно
+result.addEventListener("click", ()=>{
+    inp.value = eval(inp.value);
+})
+
+//кнопка C
+backspace[0].addEventListener("click", ()=>{
+    inp.value = null;
+})
+
+//кнопка <-
+backspace[1].addEventListener("click", ()=>{
+    let inpValue = inp.value;
+    let inpLen = inp.value.length;
+    inp.value = inpValue.slice(0, inpLen - 1);
 })

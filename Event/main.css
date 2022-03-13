@@ -1,5 +1,59 @@
-.square{
+/* .square{
     width: 200px;
     height: 200px;
     background-color: brown;
 }
+
+.btn{
+    background-color:rgb(165, 42, 42) ;
+    width: 100px;
+    height: 100px;
+} */
+
+
+
+
+/* калькулятор */
+.main{
+    border: 2px solid black;
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 400px;
+    height: 560px;
+    border-radius: 20px;
+    background-color: rgb(231 237 141);
+
+}
+
+.input {
+    margin-top: 20px;
+    margin-left: 105px;
+    width: 200px;
+    height: 25px;
+    border: 4px solid black;
+}
+
+.buttons{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.btn{
+    background-color:rgb(197, 74, 74) ;
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.btn_mark{
+    background-color: bisque;
+}
+
+.two{
+    background-color: rgb(197, 74, 74) ;
+}
+   
