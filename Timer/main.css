@@ -1,0 +1,28 @@
+.timer{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.inp{
+    width: 60px;
+    border: 2px solid rgb(143, 184, 196);
+    text-indent: 20px;
+    margin-top: 20px;
+}
+
+.buttons{
+    margin-top: 10px;
+}
+
+.btn{
+    border-style: none;
+    color: black;
+    background-color:rgb(161 213 227);
+    border-style:none;
+    border-radius: 15px;
+}
+
