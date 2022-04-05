@@ -1,0 +1,42 @@
+body{
+    background-color: #0014ff4a !important;
+}
+
+h1{
+    color: #050763;
+}
+
+form{
+    display: flex;
+}
+
+input{
+    width: 500px; 
+}
+
+li{
+    width: 500px;
+}
+
+.btn_ready {
+    border-radius: 6px;
+    border-color: #050763;
+    background-color: #17a2b8;;
+    color: white;
+}
+
+.btn_delete {
+    border-radius: 6px;
+    border-color: #050763;
+    background-color: #df8f31c4;
+    color: white;
+}
+
+input:focus {
+     outline-color:#050763;
+}
+
+
+.div_li_btn{
+    display:flex;
+}
