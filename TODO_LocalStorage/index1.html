@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <title>Для мамы</title>
+</head>
+<body>
+    <div class="links">
+        <a href="./index.html">для меня</a>
+        <a href="./index2.html">для папы</a>
+    </div>
+    <div class="container" id = "container1"></div>
+
+    <script>
+      let tasks = []
+        document.addEventListener("DOMContentLoaded",  function(){
+            createApp("Cписок дел для мамы",tasks, "Mom TODO", "MomDones");
+        })
+    </script>
+
+    <script src="./main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
